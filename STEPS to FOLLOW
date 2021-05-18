@@ -1,0 +1,40 @@
+1) User Must have installed Python 3 version in his machine
+
+2) create a folder and inside it follow given steps and create VENV in the system
+    0)pip install virtualenv
+    1)py -m venv project-name
+    2)pip install -r [location]\\requirements.txt
+    3)virtualenv env [.\env\Scripts\activate.bat]
+
+3) activate the VENV and install all dependencies from requirements.txt file
+    pip install -r requirements.txt
+
+4) come inside project folder which is 'Demo' in terminal
+    run in terminal > py manage.py runserver
+
+5) set the below details in POSTMAN or and REST tool and hit the URLs in the given format
+Don't Change the URL format
+Don't Change the HEADER format
+Don't Change the BODY format
+You can change x and y values only
+
+HEADER
+======
+content_type="application/json"
+
+URLs
+====
+http://127.0.0.1:8000/home/add/
+http://127.0.0.1:8000/home/sub/
+http://127.0.0.1:8000/home/mul/
+http://127.0.0.1:8000/home/div/
+http://127.0.0.1:8000/home/pow/
+http://127.0.0.1:8000/home/fact/
+
+REQUEST BODY
+============
+JSON_BODY = {
+    "x": 5,
+    "y": 5
+}
+'''

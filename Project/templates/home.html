@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="get" action="home">
+        {% csrf_token %}
+        <br>
+        select Operation : <select  name="operation">
+                            <option value="add">Addition</option>
+                            <option value="sub">Subtraction </option>
+                            <option value="mul">Multiplication</option>
+                            <option value="div">Division</option>
+                            <option value="pow">Power</option>
+                            <option value="fact">Factorial</option>
+                          </select> <br><br>
+        First Number : <input type="text" name="x"><br><br>
+        Second Number : <input type="text" name="y"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
